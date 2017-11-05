@@ -1,0 +1,401 @@
+/*公共样式--开始*/
+:focus{outline：none}
+a:focus{outline：none}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+	/*	overflow-x: hidden;
+*/
+}
+
+body {
+	font-family: "Microsoft YaHei";
+	font-size: 14px;
+	color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: #232323;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+input,
+textarea {
+	outline: none;
+	border: none;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: ".";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center
+}
+
+.tr {
+	text-align: right;
+}
+
+.ellipse {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.inline {
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+}
+
+
+/*公共样式--结束*/
+
+.header>.top {
+	/*width: 1920px;*/
+	height: 30px;
+	margin: 0 auto;
+	background: rgb(0, 109, 182);
+}
+
+.header>.top>.container {
+	width: 1060px;
+	height: 30px;
+	margin: 0 auto;
+	color: white;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: "microsoft yahei";
+}
+
+.header>.top>.container>.welcome {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.header>.top>.container>.photo {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+.header>.top>.container>.photo>img {
+	width: 24px;
+	height: 24px;
+	margin: 2px 0 4px;
+}
+
+
+/*LOGO+头部导航*/
+
+.header>.nav {
+	width: 1058px;
+	height: 70px;
+	margin: 9px auto 6px;
+}
+
+.header>.nav>ul {
+	float: right;
+	height: 70px;
+}
+
+.header>.nav>.logo,
+.header>.nav>ul>li {
+	float: left;
+}
+
+.header>.nav>ul>li {
+	width: 99px;
+	height: 30px;
+	text-align: center;
+	margin: 20px 19px;
+	/*padding: 20px 0;*/
+}
+
+.header>.nav>ul>li>a {
+	display: block;
+	width: 99px;
+	height: 30px;
+	line-height: 30px;
+	color: #012c61;
+	font-size: 16px;
+}
+
+.header>.nav>ul>li:hover a,
+.header>.nav>ul>li>a.on {
+	background: #016db6;
+	color: #fefefe;
+}
+
+.header>.nav>ul>li>.nav_sub {
+	display: none;
+	position: relative;
+	width: 100%;
+	background: #016db6;
+	z-index: 9999;
+	margin-top: .8px;
+	padding: 9.2px 0 6px;
+}
+
+.header>.nav>ul>li>.nav_sub>li {
+	height: 30px;
+	overflow: hidden;
+}
+
+.header>.nav>ul>li>.nav_sub>li>a {
+	display: block;
+	color: white;
+	width: 99px;
+	height: 22px;
+}
+
+.header>.nav>ul>li>.nav_sub>li>a:hover {
+	background: #0caade;
+}
+
+.header>.nav>ul>li>.nav_sub>li>span {
+	margin: 3px 0;
+	display: inline-block;
+	width: 56px;
+	height: 1px;
+	background: white;
+	position: relative;
+	top: -7.5px;
+}
+
+.header .nav ul li:hover .nav_sub {
+	display: block;
+}
+
+
+/*广告轮播图*/
+
+.banner {
+	width: 100%;
+	height: 498px;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner>img {
+	width: 1920px;
+	height: 498px;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	z-index: -9999;
+}
+
+.banner>ul {
+	width: 264px;
+	height: 9px;
+	position: absolute;
+	bottom: 81px;
+	/*left: 1226px;*/
+	left: 50%;
+	margin-left: 248px;
+}
+
+.banner>ul>li {
+	width: 69px;
+	height: 9px;
+	float: left;
+	margin-left: 19px;
+	background-color: white;
+	border-radius: 4.5px;
+	cursor: pointer;
+	behavior: url(js/PIE.htc);
+}
+
+.banner>ul>li.on {
+	background-color: #016db6;
+}
+
+.banner>.previous,
+.banner>.next {
+	position: absolute;
+	top: 153px;
+	cursor: pointer;
+	width: 104px;
+	height: 204px;
+}
+
+.banner>.previous {
+	background: url(../img/previousHover.png) no-repeat;
+	/*left: 139px;*/
+	left: 50%;
+	margin-left: -700px;
+}
+.banner>.previous:hover{
+	background: url(../img/previous.png) no-repeat;
+}
+.banner>.next {
+	background: url(../img/next.png) no-repeat;
+	/*left: 1664px;*/
+	left: 50%;
+	margin-left: 600px;
+}
+.banner>.next:hover{
+	background: url(../img/nextHover.png) no-repeat;
+}
+/*主体标题*/
+
+.column>div.title {
+	font-size: 14px;
+	overflow: hidden;
+	position: relative;
+}
+
+.column>div.title>span {
+	display: inline-block;
+	width: 54px;
+	height: 54px;
+	line-height: 54px;
+	color: white;
+	background: #2fa8e1;
+	text-align: center;
+	margin-right: 12px;
+	float: left;
+	font-size: 38px;
+}
+
+.column>div.title>strong {
+	font-size: 26px;
+	font-weight: normal;
+}
+
+.column>div.title>i {
+	position: absolute;
+	top: 32px;
+	left: 66px;
+	font-style: normal;
+}
+
+
+/*尾部开始*/
+
+.footer {
+	/*width: 1920px;*/
+	height: 132px;
+	background: #29699a;
+	margin: 0 auto;
+}
+
+.footer>.wrapper {
+	width: 1060px;
+	height: 132px;
+	margin: 0 auto;
+	color: #f0f0f0;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.footer>.wrapper>.address {
+	float: left;
+	margin-top: 22px;
+	width: 420px;
+}
+
+.footer>.wrapper>.address>p {
+	height: 12px;
+	margin-bottom: 12px;
+	font-size: 12px;
+}
+
+.footer>.wrapper>.qr_code {
+	float: right;
+	margin-top: 19px;
+}
+
+.footer>.wrapper>.qr_code>p {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+/*尾部结束*/

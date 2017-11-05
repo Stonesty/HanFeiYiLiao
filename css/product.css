@@ -1,0 +1,101 @@
+.list {
+	width: 1104px;
+	overflow: hidden;
+	margin: 19px auto 0;
+}
+
+.list>li {
+	width: 338px;
+	height: 419px;
+	line-height: 419px;
+	margin: 0 25px 26px 0;
+	float: left;
+	background: #d7f2ff;
+	border-radius: 11px;
+	text-align: center;
+	overflow: hidden;
+	behavior: url(js/PIE.htc);
+	
+}
+
+.list>li>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.list>li>a>p {
+	width: 338px;
+	height: 89px;
+	line-height: 89px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 18px;
+}
+
+.list>li>a>span {
+	display: block;
+	position: absolute;
+	width: 338px;
+	height: 89px;
+	border-radius: 0 0 11px 11px;
+	background: RGBA(47, 168, 225, 0.5);
+	-pie-background:rgba(46, 169, 225,0.5);
+	behavior: url(js/PIE.htc);
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	filter: alpha(opacity:50);
+}
+
+.page {
+	width: 686px;
+	height: 42px;
+	margin: 39px auto 51px;
+}
+
+.page>.list {
+	overflow: hidden;
+}
+
+.page>ul>li {
+	float: left;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	margin-right: 36px;
+	border: 1px solid #2fa8e1;
+}
+
+.page>ul>li:first-child {
+	width: 88px;
+	width: expression(this.previousSibling==null'88px':'88px');
+}
+
+
+/*.page>ul>li:last-child {
+	width: 88px;
+	width: expression(this.nextSibling==null'88px':'88px');
+}*/
+
+.page>ul>li+li+li+li+li+li+li+li {
+	width: 88px;
+	margin: 0;
+}
+
+.page>ul>li:last-child {
+	margin: 0;
+}
+
+.page>ul>li>a {
+	display: block;
+	color: #666666;
+}
+
+.page>ul>li>a:hover,
+.page>ul>li>a.on {
+	background: #2fa8e1;
+}

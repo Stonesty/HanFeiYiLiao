@@ -1,0 +1,57 @@
+.title{
+	width: 1067px;
+}
+.conten_us {
+	width: 1067px;
+	height: 291px;
+	background: url(../img/contectUsFormBack.png) no-repeat center center;
+	margin: 0 auto 59px;
+}
+
+.conten_us>form {
+	width: 262px;
+	float: right;
+	
+}
+
+.conten_us>form>textarea,
+.conten_us>form>input[name='code'],
+.conten_us>form>input[type='submit'],
+.conten_us>form>input[type='text'] {
+	border: 1px solid #bfbfbf;
+	color: #C1C1C1;
+	width: 262px;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	margin-bottom: 20px;
+}
+
+.conten_us>form>textarea {
+	height: 94px;
+	outline: none;
+	line-height: none;
+	padding-top: 6px;
+}
+
+.conten_us>form>input[name='code'],
+.conten_us>form>input[type='submit'] {
+	width: 83px;
+	text-indent: 0;
+	text-align: center;
+	line-height: 30px;
+	background: white;
+	margin-left: 14px;
+	float: right;
+}
+.conten_us>form>input[type='submit']{
+	cursor: pointer;
+}
+.conten_us>ul{
+	width: 256px;
+	float: left;
+}
+.conten_us>ul>li{
+	line-height: 44px;
+	color: #777777;
+}

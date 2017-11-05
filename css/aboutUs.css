@@ -1,0 +1,29 @@
+
+.content img{
+		display: block;
+	width: 1067px;
+		margin: 0 auto;
+		margin-bottom: 48px;
+}
+.title{
+	width: 1067px;
+	margin: 0 auto;
+}
+
+.content {
+	width: 1058px;
+	margin: 0 auto 45px;
+}
+.content>h3>span,
+.content>p {
+	font-size: 14px;
+	color: #777777;
+	line-height: 36px;
+	text-indent: 2em;
+}
+
+.content>h3 {
+	color: #2d2d2d 100%;
+		font-size: 14px;
+
+}

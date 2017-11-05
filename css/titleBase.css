@@ -1,0 +1,40 @@
+.column {
+	margin-top: 48px;
+	overflow: hidden;
+	margin: 46px auto 0;
+	width: 1067px;
+}
+
+.column>.briefly {
+	width: 1067px;
+	height: 42px;
+	background: #2fa8e1;
+	margin-top: 37px;
+	font-size: 27px;
+	color: white;
+	text-align: center;
+	border-radius: 12px;
+	font-weight: 600;
+	behavior: url(js/PIE.htc);
+}
+
+.column>.address {
+	width: auto;
+	height: 14px;
+	float: right;
+	margin: 18px 0 15px;
+	color: #777777;
+	text-align: right;
+}
+
+.column>.address>a {
+	display: inline-block;
+	color: #777777;
+	height: 14px;
+	font-size: 14px;
+}
+
+.column>.address>a:hover,
+.column>.address>a:last-child {
+	color: #2fa8e1;
+}
